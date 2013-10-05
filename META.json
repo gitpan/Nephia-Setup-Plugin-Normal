@@ -57,7 +57,7 @@
    "provides" : {
       "Nephia::Setup::Plugin::Normal" : {
          "file" : "lib/Nephia/Setup/Plugin/Normal.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -71,5 +71,5 @@
          "web" : "https://github.com/nephia/Nephia-Setup-Plugin-Normal"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
