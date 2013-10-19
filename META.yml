@@ -27,7 +27,7 @@ no_index:
 provides:
   Nephia::Setup::Plugin::Normal:
     file: lib/Nephia/Setup/Plugin/Normal.pm
-    version: 0.02
+    version: 0.03
 requires:
   Cache::Cache: 0
   Nephia: 0.80
@@ -39,4 +39,6 @@ resources:
   bugtracker: https://github.com/nephia/Nephia-Setup-Plugin-Normal/issues
   homepage: https://github.com/nephia/Nephia-Setup-Plugin-Normal
   repository: git://github.com/nephia/Nephia-Setup-Plugin-Normal
-version: 0.02
+version: 0.03
+x_contributors:
+  - 'mackee <macopy123@gmail.com>'

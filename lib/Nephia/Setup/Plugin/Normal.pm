@@ -5,7 +5,7 @@ use warnings;
 use parent 'Nephia::Setup::Plugin::Minimal';
 use File::Spec;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 sub bundle {
     qw/ Assets::Bootstrap Assets::JQuery /;
@@ -21,8 +21,10 @@ sub fix_setup {
     $chain->append(CreateTemplate => \&create_template);
 
     push @{$self->setup->deps->{requires}}, (
-        'Cache::Cache'                 => '0',
-        'Plack::Middleware::CSRFBlock' => '0',
+        'Cache::Cache'                    => '0',
+        'Plack::Middleware::CSRFBlock'    => '0',
+        'IPC::ShareLite'                  => '0',
+        'Nephia::Plugin::ResponseHandler' => '0',
     );
 }
 
