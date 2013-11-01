@@ -6,5 +6,6 @@ README.md
 cpanfile
 lib/Nephia/Setup/Plugin/Normal.pm
 t/00_compile.t
+t/01_setup.t
 META.yml
 MANIFEST

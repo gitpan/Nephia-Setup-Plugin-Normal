@@ -3,6 +3,12 @@ abstract: 'Normal setup of Nephia'
 author:
   - 'ytnobody <ytnobody@gmail.com>'
 build_requires:
+  Cache::Cache: 0
+  Guard: 0
+  IPC::ShareLite: 0
+  Nephia::Plugin::Dispatch: 0
+  Nephia::Plugin::ResponseHandler: 0
+  Plack::Middleware::CSRFBlock: 0
   Test::More: 0.98
 configure_requires:
   CPAN::Meta: 0
@@ -27,7 +33,7 @@ no_index:
 provides:
   Nephia::Setup::Plugin::Normal:
     file: lib/Nephia/Setup/Plugin/Normal.pm
-    version: 0.03
+    version: 0.04
 requires:
   Cache::Cache: 0
   Nephia: 0.80
@@ -39,6 +45,6 @@ resources:
   bugtracker: https://github.com/nephia/Nephia-Setup-Plugin-Normal/issues
   homepage: https://github.com/nephia/Nephia-Setup-Plugin-Normal
   repository: git://github.com/nephia/Nephia-Setup-Plugin-Normal
-version: 0.03
+version: 0.04
 x_contributors:
   - 'mackee <macopy123@gmail.com>'
